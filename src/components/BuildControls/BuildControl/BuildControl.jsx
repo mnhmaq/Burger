@@ -7,7 +7,7 @@ const buildControl = (props) => {
             <div className={sytles.Label}>{props.label}</div>
             <button onClick={() => props.addHandler(props.type)} className={sytles.More}>Add</button>
             <p>{props.presentCount}</p>
-            <button onClick={() => props.removeHandler(props.type)} className={sytles.Less}>Remove</button>
+            <button disabled={props.disabled} onClick={() => props.removeHandler(props.type)} className={sytles.Less}>Remove</button>
         </div>
     );
 } 
